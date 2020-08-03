@@ -1,0 +1,108 @@
+@import './variables.scss';
+
+.home {
+	text-align: center;
+	background-color: #f2f5f7;
+	background-size: cover;
+	height: 100%;
+	.all {
+		@media (min-width: 640px) {
+			display: none;
+			// visibility: hidden;
+		}
+	
+		@media (min-width: 768px) {
+			display: none;
+			// visibility: hidden;
+		}
+	
+		@media (min-width: 1024px) {
+			display: block;
+			// visibility: visible;
+		}
+	
+		@media (min-width: 1280px) {
+			display: block;
+			// visibility: visible;
+		}
+		padding: 10px;
+		text-align: center;
+
+		.mydata {
+			margin-top: 50px;
+			width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			display: flex;
+			justify-content: center;
+			align-content: space-between;
+
+			.first-column {
+				.pos {
+					@media (min-width: 640px) {
+						display: none;
+						// visibility: hidden;
+					}
+				
+					@media (min-width: 768px) {
+						display: none;
+						// visibility: hidden;
+					}
+				
+					@media (min-width: 1024px) {
+						display: block;
+						// visibility: visible;
+					}
+				
+					@media (min-width: 1280px) {
+						display: none;
+						// visibility: visible;
+					}
+				}
+			}
+
+			.space {
+				width: 10px;
+				background-color: $paleGrey;
+			}
+
+			.second-column {
+				// @media (min-width: 640px) {
+				// 	margin-left: auto;
+				// 	margin-right: auto;
+				// }
+			
+				@media (max-width: 768px) {
+					margin-left: auto;
+					margin-right: auto;
+					display: flex;
+					justify-content: center;
+				}
+
+				display: flex;
+				margin-left: 10px;
+				justify-items: center;
+				// align-items: baseline;
+
+				.space {
+					width: 0px;
+					background-color: $paleGrey;
+				}
+
+				.second-section{
+					.pos-two {
+						@media (min-width: 768px) {
+							display: none;
+						}
+						@media (min-width: 1024px) {
+							display: none;
+						}
+						@media (min-width: 1280px) {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}

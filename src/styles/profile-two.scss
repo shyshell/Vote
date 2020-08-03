@@ -1,0 +1,67 @@
+@import './variables.scss';
+
+.profile-two {
+    @media (min-width: 1024px) {
+        display: none;
+        // visibility: visible;
+    }
+
+    @media (min-width: 1280px) {
+        display: none;
+        // visibility: visible;
+    }
+
+	background-color: white;
+	padding: 10px;
+	padding-bottom: 20px;
+	height: fit-content;
+	border-radius: 8px;
+	justify-content: center;
+    margin-top: 50px;
+    
+    .stats {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        .candidates {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: $paleGrey;
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+            color: $darkGrey;
+            font-weight: 500;
+        }
+
+        .voters {
+            display: flex;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: $paleGrey;
+            margin-left: 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            color: $darkGrey;
+        }
+    }
+
+	.pic {
+        margin-top: 10px;
+		border-radius: 9999px;
+		width: 120px;
+		height: 120px;
+		cursor: pointer;
+    }
+    
+    .name {
+        font-size: 20px;
+        font-weight: 600;
+        color: $darkGrey;
+    }
+}

@@ -1,0 +1,87 @@
+@import './variables.scss';
+
+.all {
+	.position {
+		@media (max-width: 1024px) {
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 250px;
+            border-color: white;
+            margin-left: -10px;
+		}
+
+		width: 250px;
+		height: fit-content;
+		background-color: white;
+		border-radius: 4px;
+		margin-top: 50px;
+		border-top: 4px solid;
+		border-color: $primaryColor;
+
+		.title {
+			text-align: start;
+			margin-left: 10px;
+			margin-top: 25px;
+		}
+
+		.content {
+			padding: 10px;
+			margin-bottom: 5px;
+
+			.posCard {
+				width: auto;
+				margin-bottom: 12px;
+				height: fit-content;
+				border: 2px solid $paleGrey;
+				background-color: $paleGrey;
+				cursor: pointer;
+				padding: 0.4px 5px 0.4px 10px;
+
+				.icon {
+					fill: $primaryColor;
+					margin-top: 5px;
+					display: flex;
+					justify-items: left;
+					width: 20px;
+				}
+
+				.description {
+					font-size: 18px;
+					font-weight: 500;
+				}
+
+				.posCardName {
+					text-align: left;
+					color: $darkGrey;
+					font-weight: 600;
+					font-size: 18px;
+				}
+			}
+
+			.posCard:hover {
+				border: 2px solid $primaryColor;
+				border-radius: 8px;
+			}
+		}
+
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		.content::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge and Firefox */
+		.content {
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
+		}
+	}
+
+	.things {
+		background-color: white;
+		margin-top: 30px;
+		height: 250px;
+		padding-top: 20px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,63 @@
+@import 'variables';
+
+.title {
+    color: $primaryColor;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title3 {
+    color:$darkGrey;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title4 {
+    color:$primaryColor;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.title2 {
+    color: $darkGrey;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.toggles {
+    // padding-left: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 260px;
+    .title {
+        padding-left: 10px;
+        text-align: start;
+    }
+    .more {
+        cursor: pointer;
+        margin-top: 8px;
+        background-color: $paleGrey;
+        height: fit-content;
+        width: 190px;
+        border: none;
+        border-radius: 8px;
+        color: $primaryColor;
+        text-align: center;
+        padding: 8px;
+        align-items: flex-end;
+    }
+
+    .more:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}

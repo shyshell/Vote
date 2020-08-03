@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.stats {
+    width: 700px;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 30px;
+
+    .actions {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 10px;
+        .voteCard {
+            margin-bottom: 12px;
+            width: 190px;
+            height: fit-content;
+            background-color: $paleGrey;
+            padding: 12px;
+            border: 2px solid;
+            border-color: $paleGrey;
+
+            .icon {
+                height: 60px;
+                width: 60px;
+                margin-top: 10px;
+                fill: $primaryColor;
+            }
+
+            .vote-btn {
+                margin-top: 10px;
+                width: 100%;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+                border-radius: 5px;
+                background-color: white;
+                color: $primaryColor;
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                font-weight: 400;
+            }
+
+            .vote-btn:hover {
+                background-color: $primaryColor;
+                color: white;
+            }
+        }
+    }
+}
