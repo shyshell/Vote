@@ -11,8 +11,13 @@
 			// visibility: hidden;
 		}
 	
-		@media (min-width: 768px) {
+		@media (max-width: 767px) {
 			display: none;
+			// visibility: hidden;
+		}
+
+		@media (min-width: 768px) {
+			display: block;
 			// visibility: hidden;
 		}
 	
@@ -38,6 +43,10 @@
 			align-content: space-between;
 
 			.first-column {
+				@media (max-width: 800px) {
+					display: none;
+					// visibility: hidden;
+				}
 				.pos {
 					@media (min-width: 640px) {
 						display: none;
