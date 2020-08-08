@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './common.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .all {
     @media (min-width: 640px) {
@@ -64,6 +65,7 @@
             .candidates-number {
                 color: $darkGrey;
                 font-size: 14px;
+                font-family: $fontRoboto;
                 font-weight: 600;
                 cursor: pointer;
             }
@@ -71,6 +73,7 @@
             .voters-number {
                 color: $darkGrey;
                 font-size: 14px;
+                font-family: $fontRoboto;
                 font-weight: 600;
                 cursor: pointer;
             }

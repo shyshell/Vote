@@ -1,4 +1,6 @@
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 .comments {
     @media (min-width: 640px) {
@@ -57,6 +59,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     margin-left: 10px;
+                    font-family: $fontRoboto;
                 }
             }
             .comment {
@@ -66,6 +69,7 @@
                 text-align: left;
                 margin-left: 5px;
                 margin-bottom: 8px;
+                font-family: $fontRoboto;
             }
         }
 

@@ -1,15 +1,18 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .title {
     color: $primaryColor;
     font-size: 14px;
     font-weight: 600;
+    font-family: $fontRoboto;
 }
 
 .title3 {
     color:$darkGrey;
     font-size: 16px;
     font-weight: 600;
+    font-family: $fontRoboto;
 }
 
 .title4 {
@@ -19,16 +22,19 @@
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: left;
+    font-family: $fontRoboto;
 }
 
 .title2 {
     color: $darkGrey;
     font-size: 14px;
     font-weight: 600;
+    font-family: $fontRoboto;
 }
 
 .subtitle {
     font-size: 14px;
+    font-family: $fontRoboto;
     font-weight: 500;
 }
 
@@ -41,6 +47,7 @@
     .title {
         padding-left: 10px;
         text-align: start;
+        font-family: $fontRoboto;
     }
     .more {
         cursor: pointer;
@@ -51,6 +58,7 @@
         border: none;
         border-radius: 8px;
         color: $primaryColor;
+        font-family: $fontRoboto;
         text-align: center;
         padding: 8px;
         align-items: flex-end;
@@ -59,5 +67,6 @@
     .more:hover {
         background-color: $primaryColor;
         color: white;
+        font-family: $fontRoboto;
     }
 }

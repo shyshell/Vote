@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.bar {
+    height: 35px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .name {
+        margin-left: 15px;
+        font-size: 15px;
+        color: #828994;
+        font-family: $fontRoboto;
+        font-weight: 500;
+    }
+}
+
+.bar:hover {
+    background-color: $paleGrey;
+    cursor: pointer;
+}
