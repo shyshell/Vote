@@ -5,6 +5,44 @@
 	background-color: #f2f5f7;
 	background-size: cover;
 	height: 100%;
+
+	// @media (min-width: 640px) {
+	// 	background-color: white;
+	// 	// visibility: hidden;
+	// }
+
+	// @media (max-width: 767px) {
+	// 	background-color: white;
+	// 	// visibility: hidden;
+	// }
+
+	.mobile-ui {
+		@media (min-width: 640px) {
+			display: block;
+			// visibility: hidden;
+		}
+	
+		@media (max-width: 767px) {
+			display: block;
+			// visibility: hidden;
+		}
+
+		@media (min-width: 768px) {
+			display: none;
+			// visibility: hidden;
+		}
+	
+		@media (min-width: 1024px) {
+			display: none;
+			// visibility: visible;
+		}
+	
+		@media (min-width: 1280px) {
+			display: none;
+			// visibility: visible;
+		}
+	}
+
 	.all {
 		@media (min-width: 640px) {
 			display: none;
@@ -34,7 +72,7 @@
 		text-align: center;
 
 		.mydata {
-			margin-top: 50px;
+			margin-top: 30px;
 			width: 100%;
 			margin-right: auto;
 			margin-left: auto;

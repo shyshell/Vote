@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <div class="mobile-ui">
+      <Vote/>
+    </div>
     <div class="all">
       <Nav />
       <!-- <Modal/> -->
@@ -39,6 +42,7 @@ import Position from "../components/Position";
 import Comments from "../components/Comments";
 import Stats from "../components/Stats";
 import ProfileTwo from "../components/ProfileTwo";
+import Vote from '../components/mobile/Vote';
 // import Modal from '../components/Modal'
 
 export default {
@@ -53,6 +57,7 @@ export default {
     Comments,
     ProfileTwo,
     Stats,
+    Vote
   },
 };
 </script>
