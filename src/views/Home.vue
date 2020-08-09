@@ -17,6 +17,7 @@
         <div class="space"></div>
         <div class="second-column">
           <div class="first-section">
+            <Logs/>
             <ProfileTwo />
             <CandidateList />
             <Stats />
@@ -43,6 +44,7 @@ import Comments from "../components/Comments";
 import Stats from "../components/Stats";
 import ProfileTwo from "../components/ProfileTwo";
 import Vote from '../components/mobile/Vote';
+import Logs from '../components/Logs';
 // import Modal from '../components/Modal'
 
 export default {
@@ -57,7 +59,8 @@ export default {
     Comments,
     ProfileTwo,
     Stats,
-    Vote
+    Vote,
+    Logs
   },
 };
 </script>

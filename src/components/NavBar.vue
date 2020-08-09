@@ -1,5 +1,5 @@
 <template>
-    <div class="bar">
+    <div :class="status">
         <div class="name">
             {{name}}
         </div>
@@ -11,7 +11,8 @@ export default {
     name: 'NavBar',
     props: {
         path: String,
-        name: String
+        name: String,
+        status: String
     }
 }
 </script>
