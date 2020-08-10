@@ -11,7 +11,7 @@
 
     .content {
         padding-left: 15px;
-        background-color: #82899421;
+        background-color: $paleBlue;
         padding-right: 15px;
         // border-bottom: 1px solid;
         // border-color: $borderColor;
@@ -54,8 +54,8 @@
         }
 
         .critical {
-            background-color: rgba(251, 48, 48, 0.22);
-            color: #FD0000;
+            background-color: $paleRed;
+            color: $darkRed;
             border-radius: 9999px;
             display: flex;
             justify-content: center;
@@ -82,5 +82,9 @@
             max-width: 90px;
             font-size: 14px;
         }
+    }
+
+    .activity:hover {
+        background-color: $paleBlue;
     }
 }
