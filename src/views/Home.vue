@@ -1,26 +1,32 @@
 <template>
   <div class="home">
     <div class="mobile-ui">
-      <Vote/>
+      <Vote />
     </div>
     <div class="all">
       <Nav />
-      <!-- <Modal/> -->
       <div class="mydata">
+        <!-- <Success/> -->
+        <!-- scraped until i can figure out a way 
+        to display dynamic global toasts without spaghetti code-->
+
+        <!-- todo: make spaghetti after this -->
+
         <div class="first-column">
           <Profile candidatesCount="9" votersCount="599"></Profile>
-          <Comments />
           <div class="pos">
             <Position />
           </div>
+          <Comments />
         </div>
         <div class="space"></div>
         <div class="second-column">
           <div class="first-section">
-            <Logs/>
+            <Logs />
             <ProfileTwo />
             <CandidateList />
             <Stats />
+            <Voting />
           </div>
           <div class="space"></div>
           <div class="second-section">
@@ -43,8 +49,10 @@ import Position from "../components/Position";
 import Comments from "../components/Comments";
 import Stats from "../components/Stats";
 import ProfileTwo from "../components/ProfileTwo";
-import Vote from '../components/mobile/Vote';
-import Logs from '../components/Logs';
+import Vote from "../components/mobile/Vote";
+import Logs from "../components/Logs";
+import Voting from "../components/Voting";
+// import Success from '../components/notifications/Success'
 // import Modal from '../components/Modal'
 
 export default {
@@ -60,7 +68,9 @@ export default {
     ProfileTwo,
     Stats,
     Vote,
-    Logs
+    Logs,
+    Voting,
+    // Success
   },
 };
 </script>

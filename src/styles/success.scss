@@ -1,0 +1,109 @@
+@import './variables.scss';
+
+.show {
+    position: fixed;
+    border: 2px solid;
+    border-color: $borderColor;
+    height: fit-content;
+    max-width: 400px;
+    right: 30px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateX(0px);
+    transition: transform 0.5s;
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        // margin-left: 10px;
+        // margin-right: 10px;
+        // margin-top: 5px;
+        // margin-bottom: 5px;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .line {
+            width: 4px;
+            height: 100%;
+            border-radius: 9999px;
+            background-color: #65f874;
+            color: #65f874;
+        }
+
+        .icon {
+            margin-left: 8px;
+            fill: #65f874;
+            height: 25px;
+            width: 25px;
+        }
+
+        .message {
+            font-size: 14px;
+            font-weight: 500;
+            color: $darkBlue;
+            margin-left: 8px;
+            width: 200px;
+            text-align: start;
+        }
+    }
+}
+
+.hide {
+    position: fixed;
+    border: 2px solid;
+    border-color: $borderColor;
+    height: fit-content;
+    max-width: 400px;
+    right: 30px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateX(500px);
+    transition: transform 0.5s;
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        // margin-left: 10px;
+        // margin-right: 10px;
+        // margin-top: 5px;
+        // margin-bottom: 5px;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .line {
+            width: 4px;
+            height: 100%;
+            border-radius: 9999px;
+            background-color: #65f874;
+            color: #65f874;
+        }
+
+        .icon {
+            margin-left: 8px;
+            fill: #65f874;
+            height: 25px;
+            width: 25px;
+        }
+
+        .message {
+            font-size: 14px;
+            font-weight: 500;
+            color: $darkBlue;
+            margin-left: 8px;
+            width: 200px;
+            text-align: start;
+        }
+    }
+}

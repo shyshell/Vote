@@ -21,7 +21,7 @@
 			display: block;
 			// visibility: hidden;
 		}
-	
+
 		@media (max-width: 767px) {
 			display: block;
 			// visibility: hidden;
@@ -31,12 +31,12 @@
 			display: none;
 			// visibility: hidden;
 		}
-	
+
 		@media (min-width: 1024px) {
 			display: none;
 			// visibility: visible;
 		}
-	
+
 		@media (min-width: 1280px) {
 			display: none;
 			// visibility: visible;
@@ -48,7 +48,7 @@
 			display: none;
 			// visibility: hidden;
 		}
-	
+
 		@media (max-width: 767px) {
 			display: none;
 			// visibility: hidden;
@@ -58,12 +58,12 @@
 			display: block;
 			// visibility: hidden;
 		}
-	
+
 		@media (min-width: 1024px) {
 			display: block;
 			// visibility: visible;
 		}
-	
+
 		@media (min-width: 1280px) {
 			display: block;
 			// visibility: visible;
@@ -90,20 +90,84 @@
 						display: none;
 						// visibility: hidden;
 					}
-				
+
 					@media (min-width: 768px) {
 						display: none;
 						// visibility: hidden;
 					}
-				
+
 					@media (min-width: 1024px) {
 						display: block;
 						// visibility: visible;
 					}
-				
+
 					@media (min-width: 1280px) {
 						display: none;
 						// visibility: visible;
+					}
+				}
+
+				.message {
+					width: 250px;
+					height: fit-content;
+					border-radius: 8px;
+					margin-top: 20px;
+					background-color: white;
+
+					.content {
+						padding: 15px;
+
+						.message-title {
+							display: flex;
+							justify-content: start;
+							align-items: center;
+
+							.message-pic {
+								border-radius: 9999px;
+								height: 32px;
+								width: 32px;
+							}
+
+							.name {
+								margin-left: 10px;
+								font-size: 14px;
+								font-weight: 600;
+								color: $darkGrey;
+							}
+						}
+
+						.message-info {
+							color: $subtitleColor;
+							font-size: 14px;
+							text-align: left;
+							margin-top: 10px;
+						}
+
+						.message-footer {
+							.line {
+								color: $borderColor;
+								margin-top: 12px;
+							}
+
+							.message-time {
+								margin-top: 12px;
+								display: flex;
+								justify-content: start;
+								align-items: center;
+
+								.icon {
+									fill: $borderColor;
+									height: 25px;
+									width: 25px;
+								}
+
+								.time {
+									margin-left: 10px;
+									color: $subtitleColor;
+									font-size: 14px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -118,7 +182,7 @@
 				// 	margin-left: auto;
 				// 	margin-right: auto;
 				// }
-			
+
 				@media (max-width: 768px) {
 					margin-left: auto;
 					margin-right: auto;
@@ -136,7 +200,7 @@
 					background-color: $paleGrey;
 				}
 
-				.second-section{
+				.second-section {
 					.pos-two {
 						@media (min-width: 768px) {
 							display: none;

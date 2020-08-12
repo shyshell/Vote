@@ -36,6 +36,7 @@
     font-size: 14px;
     font-family: $fontRoboto;
     font-weight: 500;
+    color: $subtitleColor;
 }
 
 .toggles {
@@ -44,6 +45,11 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 260px;
+    align-items: baseline;
+	border-bottom: 2px solid;
+    border-color: $borderColor;
+    height: 40px;
+    
     .title {
         padding-left: 10px;
         text-align: start;
@@ -56,13 +62,13 @@
         height: fit-content;
         width: 190px;
         border: none;
-        border-radius: 8px;
+        border-radius: 4px;
         color: $primaryColor;
         font-family: $fontRoboto;
         text-align: center;
-        padding: 6px;
+        padding: 4px;
         align-items: flex-end;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .more:hover {

@@ -2,82 +2,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-.comments {
-    @media (min-width: 640px) {
-        display: none;
-        // visibility: hidden;
-    }
-
-    @media (min-width: 768px) {
-        display: none;
-        // visibility: hidden;
-    }
-
-    @media (max-width: 1291px) {
-        margin-top: 50px;
-        display: block;
-        // visibility: visible;
-    }
-
-    @media (min-width: 1280px) {
-        display: block;
-        // visibility: visible;
-    }
-
-    margin-top: 20px;
-    height: fit-content;
+.message {
     width: 250px;
+    height: fit-content;
+    border-radius: 8px;
+    margin-top: 20px;
     background-color: white;
 
     .content {
-        padding: 10px;
-        padding-right: 20px;
+        padding: 15px;
 
-        .voter {
-            margin-bottom: 20px;
-            height: fit-content;
-            width: 100%;
-            background-color: $paleGrey;
-            border-radius: 4px;
-            padding: 5px;
+        .message-title {
+            display: flex;
+            justify-content: start;
+            align-items: center;
 
-            .details {
-                display: flex;
-                align-items: center;
-                padding-left: 5px;
-
-                .avatar {
-                    border-radius: 9999px;
-                    width: 35px;
-                    height: 35px;
-                    cursor: pointer;
-                }
-
-                .name {
-                    text-align: left;
-                    color: $darkGrey;
-                    font-weight: 600;
-                    font-size: 14px;
-                    margin-left: 10px;
-                    font-family: $fontRoboto;
-                }
+            .message-pic {
+                border-radius: 9999px;
+                height: 32px;
+                width: 32px;
             }
-            .comment {
-                color: $darkGrey;
-                font-size: 15px;
-                font-weight: 500;
-                text-align: left;
-                margin-left: 5px;
-                margin-bottom: 8px;
+
+            .name {
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 600;
+                color: $darkBlue;
                 font-family: $fontRoboto;
             }
         }
 
-        .more {
-            text-align: center;
-            color: $primaryColor;
-            font-size: 16px;
-            cursor: pointer;
+        .message-info {
+            color: $subtitleColor;
+            font-size: 14px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .message-footer {
+            .line {
+                color: $borderColor;
+                background-color: $borderColor;
+                margin-top: 12px;
+                height: 1px;
+                border: none;
+            }
+
+            .message-time {
+                margin-top: 12px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                .icon {
+                    fill: $borderColor;
+                    height: 25px;
+                    width: 25px;
+                }
+
+                .time {
+                    margin-left: 10px;
+                    color: $subtitleColor;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
+
+// .comments {
+//     @media (min-width: 640px) {
+//         display: none;
+//         // visibility: hidden;
+//     }
+
+//     @media (min-width: 768px) {
+//         display: none;
+//         // visibility: hidden;
+//     }
+
+//     @media (max-width: 1291px) {
+//         margin-top: 30px;
+//         display: block;
+//         // visibility: visible;
+//     }
+
+//     @media (min-width: 1280px) {
+//         display: block;
+//         // visibility: visible;
+//     }
+
+//     // margin-top: 20px;
+//     height: fit-content;
+//     width: 250px;
+//     background-color: white;
+//     border-radius: 8px;
+
+//     .content {
+//         padding: 10px;
+//         padding-right: 20px;
+
+//         .voter {
+//             margin-bottom: 20px;
+//             height: fit-content;
+//             width: 100%;
+//             background-color: $paleGrey;
+//             border-radius: 4px;
+//             padding: 5px;
+
+//             .details {
+//                 display: flex;
+//                 align-items: center;
+//                 padding-left: 5px;
+
+//                 .avatar {
+//                     border-radius: 9999px;
+//                     width: 35px;
+//                     height: 35px;
+//                     cursor: pointer;
+//                 }
+
+//                 .name {
+//                     text-align: left;
+//                     color: $darkGrey;
+//                     font-weight: 600;
+//                     font-size: 14px;
+//                     margin-left: 10px;
+//                     font-family: $fontRoboto;
+//                 }
+//             }
+//             .comment {
+//                 color: $darkGrey;
+//                 font-size: 15px;
+//                 font-weight: 500;
+//                 text-align: left;
+//                 margin-left: 5px;
+//                 margin-bottom: 8px;
+//                 font-family: $fontRoboto;
+//             }
+//         }
+
+//         .more {
+//             text-align: center;
+//             color: $primaryColor;
+//             font-size: 16px;
+//             cursor: pointer;
+//         }
+//     }
+// }

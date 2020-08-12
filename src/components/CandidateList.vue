@@ -8,7 +8,7 @@
             <div v-for="(candidate, i) in candidates" :key="i" class="candidate-card">
                 <img class="candidate-profile" :src="candidate.url" :alt="candidate.name">
                 <p class="title2">{{ candidate.name }} <br> <br> <span class="subtitle">{{ candidate.message }}</span></p>
-                <button class="candidate-btn">Manifesto</button>
+                <button @click="show" class="candidate-btn">Manifesto</button>
             </div>
         </div>
     </div>
@@ -38,6 +38,12 @@ export default {
                     url: 'https://randomuser.me/api/portraits/med/women/31.jpg'
                 }
             ]
+        }
+    },
+
+    methods: {
+        show(){
+            
         }
     }
 }

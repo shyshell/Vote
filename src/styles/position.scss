@@ -8,7 +8,8 @@
 			margin-right: auto;
 			width: 250px;
             border-color: white;
-            margin-left: -10px;
+			margin-left: -10px;
+			
 		}
 
 		width: 250px;
@@ -18,11 +19,12 @@
 		margin-top: 45px;
 		border-top: 4px solid;
 		border-color: $primaryColor;
+		border-radius: 8px;
 
 		.title {
 			text-align: start;
 			margin-left: 10px;
-			margin-top: 25px;
+			margin-top: 15px;
 		}
 
 		.content {
@@ -49,6 +51,7 @@
 				.description {
 					font-size: 15px;
 					font-weight: 500;
+					color: $subtitleColor;
 				}
 
 				.posCardName {
