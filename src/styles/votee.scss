@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .everything {
+    grid-column-gap: 5px;
     grid-row-gap: 30px;
     width: 100%; 
     justify-content: center;
@@ -10,7 +11,7 @@
 
     .votee {
         height: fit-content;
-        width: 200px;
+        width: fit-content;
         border-radius: 4px;
         background-color: $paleGrey;
         // display: flex;

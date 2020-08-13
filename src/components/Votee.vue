@@ -8,7 +8,7 @@
         <div class="desc">{{candidate.desc}}</div>
       </div>
     </div>
-    <button class="btn">vote for me</button>
+    <button @click="scroll" class="btn">vote for me</button>
   </div>
 </div>
 </template>
@@ -16,6 +16,14 @@
 <script>
 export default {
   name: "Votee",
+  methods: {
+      scroll(){
+          const myEl = document.getElementById('voting')
+          this.$smoothScroll({
+              scrollTo: myEl
+          })
+      }
+  },
   data(){
       return {
           candidates: [

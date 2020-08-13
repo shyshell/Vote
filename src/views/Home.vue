@@ -25,8 +25,7 @@
             <Logs />
             <ProfileTwo />
             <CandidateList />
-            <Stats />
-            <Voting />
+            <Hybrid/>
           </div>
           <div class="space"></div>
           <div class="second-section">
@@ -47,11 +46,10 @@ import Nav from "../components/Nav";
 import CandidateList from "../components/CandidateList";
 import Position from "../components/Position";
 import Comments from "../components/Comments";
-import Stats from "../components/Stats";
 import ProfileTwo from "../components/ProfileTwo";
 import Vote from "../components/mobile/Vote";
 import Logs from "../components/Logs";
-import Voting from "../components/Voting";
+import Hybrid from "../components/Hybrid"
 // import Success from '../components/notifications/Success'
 // import Modal from '../components/Modal'
 
@@ -66,11 +64,9 @@ export default {
     Position,
     Comments,
     ProfileTwo,
-    Stats,
     Vote,
     Logs,
-    Voting,
-    // Success
+    Hybrid
   },
 };
 </script>
