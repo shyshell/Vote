@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+.everything {
+    grid-row-gap: 30px;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    .votee {
+        height: fit-content;
+        width: 200px;
+        border-radius: 4px;
+        background-color: $paleGrey;
+        // display: flex;
+        padding: 10px;
+        align-items: center;
+        // margin-top: 20px;
+    
+        .picc {
+            height: 50px;
+            width: 50px;
+            border-radius: 4px;
+        }
+    
+        .details {
+            height: fit-content;
+            margin-left: 10px;
+    
+            .name {
+                font-size: 14px;
+                font-weight: 600;
+                color: $darkBlue;
+                font-family: $fontRoboto;
+                text-align: left;
+            }
+    
+            .desc {
+                color: $subtitleColor;
+                font-size: 14px;
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+    
+        .btn {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: $primaryColor;
+            border-radius: 4px;
+            height: 25px;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+        }
+    }
+}
+

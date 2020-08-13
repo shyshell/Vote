@@ -1,7 +1,7 @@
 <template>
   <div class="all">
     <div>
-      <modal name="info" height="auto">
+      <modal class="modal" name="info" height="auto">
         <div class="window-header">{{name}}</div>
         <div class="info">
           <p class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ipsa neque numquam cumque dolorem nesciunt nulla. Rem maxime fugit repellat accusamus accusantium minus! Eos a pariatur eius, iusto quibusdam assumenda.</p>
@@ -94,7 +94,10 @@ export default {
 @import "../styles/common.scss";
 @import "../styles/variables.scss";
 
-.window-header {
+.modal {
+  border-radius: 8px;
+
+  .window-header {
   background-color: $paleGrey;
   height: 40px;
   text-align: center;
@@ -104,6 +107,7 @@ export default {
   justify-content: center;
   font-weight: 600;
   color: $darkGrey;
+  font-size: 16px;
 }
 
 .info {
@@ -113,9 +117,11 @@ export default {
   text-align: left;
 
   .message {
-    font-size: 18px;
+    font-size: 14px;
     color: $darkGrey;
     font-weight: 500;
+    text-align: center;
   }
+}
 }
 </style>
