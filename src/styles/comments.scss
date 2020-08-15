@@ -14,7 +14,7 @@
 
         .message-title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
 
             .message-pic {
@@ -36,6 +36,7 @@
             color: $subtitleColor;
             font-size: 14px;
             text-align: left;
+            letter-spacing: 0.5px;
             margin-top: 10px;
         }
 
@@ -51,7 +52,7 @@
             .message-time {
                 margin-top: 12px;
                 display: flex;
-                justify-content: start;
+                justify-content: flex-start;
                 align-items: center;
 
                 .icon {

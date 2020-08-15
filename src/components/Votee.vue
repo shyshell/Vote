@@ -9,6 +9,7 @@
       </div>
     </div>
     <button @click="scroll" class="btn">vote for me</button>
+    <button class="sec-btn">Manifesto</button>
   </div>
 </div>
 </template>
