@@ -1,8 +1,8 @@
 <template>
 <div class="everything">
      <div v-for="(candidate, i) in candidates" :key="i" class="votee">
-    <div style="display: flex;">
-      <img class="picc" :src="candidate.url" alt="M" />
+    <div>
+        <img class="picc" :src="candidate.url" alt="M" />
       <div class="details">
         <div class="name">{{candidate.name}}</div>
         <div class="desc">{{candidate.desc}}</div>

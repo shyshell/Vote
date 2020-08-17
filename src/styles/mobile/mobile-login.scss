@@ -1,0 +1,171 @@
+@import '../variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.mobile-login {
+    background-color: white;
+	background-size: cover;
+	height: 100%;
+	position: fixed;
+	overflow-y: scroll;
+	top: 0;
+	left: 0;
+	right: 0;
+    bottom: 0;
+    
+    .profile {
+		// position: fixed;
+		// top: 0;
+		// left: 0;
+		// right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: center;
+		justify-content: center;
+		// width: 100%;
+		padding: 10px;
+
+		.details {
+			justify-content: start;
+
+			.name {
+				text-align: start;
+				margin-top: 14px;
+				font-weight: 600;
+				color: $darkBlue;
+				font-size: 20px;
+			}
+
+			.info {
+				margin-top: 5px;
+				font-weight: 400;
+				text-align: start;
+                color: $subtitleColor;
+                font-family: $fontRoboto;
+				font-size: 14px;
+			}
+		}
+
+		.dp {
+			display: flex;
+			align-content: center;
+			align-items: center;
+			justify-content: flex-end;
+			// padding-right: 14px;
+
+			// .profile-pic {
+			// 	margin-top: 10px;
+			// 	justify-content: flex-end;
+			// 	border-radius: 9999px;
+			// 	width: 50px;
+			// 	height: 50px;
+			// 	cursor: pointer;
+            // }
+            
+            .ballot {
+                padding: 12px;
+                border-radius: 9999px;
+                background-color: $paleGrey;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .ballot-icon {
+                    fill: $primaryColor;
+                    height: 24px;
+                }
+            }
+        }
+    }
+    
+    .form {
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+
+        .input {
+            padding: 10px;
+            padding-right: 35px;
+
+            .label {
+                text-align: start;
+                font-weight: 500;
+                font-size: 14px;
+                color: $darkBlue;
+            }
+
+            .form-input {
+                width: 100%;
+                border: 2px solid;
+                border-color: $paleGrey;
+                background-color: $paleGrey;
+                border-radius: 4px;
+                margin-right: 10px;
+                margin-top: 5px;
+                height: 35px;
+                padding-right: 10px;
+                padding-left: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                color: $darkBlue;
+                font-family: $fontRoboto;
+            }
+
+            .form-input:focus {
+                border: 2px solid $primaryColor;
+                outline: none;
+            }
+        }
+
+        .info {
+            margin-top: 20px;
+            display: flex;
+            padding: 10px;
+
+            .icon {
+
+                .icon-tag {
+                    fill: $subtitleColor;
+                    height: 20px;
+                }
+            }
+
+            .info-message {
+                margin-left: 12px;
+                text-align: left;
+                color: $subtitleColor;
+                font-family: $fontRoboto;
+                font-size: 14px;
+            }
+        }
+
+        .submit {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+
+            .login-btn {
+                margin-bottom: 20px;
+                width: 100%;
+                height: 40px;
+                border: none;
+                background-color: $primaryColor;
+                color: white;
+                font-weight: 500;
+                font-size: 16px;
+                border-radius: 4px;
+            }
+
+            .login-btn:focus {
+                border: 1px solid;
+                border-color: $primaryColor;
+            }
+        }
+    }
+}
