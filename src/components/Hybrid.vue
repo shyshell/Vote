@@ -1,6 +1,5 @@
 <template>
   <div class="hybrid">
-    <Success/>
     <div class="stats">
       <div class="toggles">
         <p class="title">Vote</p>
@@ -38,13 +37,11 @@
 
 <script>
 import Votee from '../components/Votee';
-import Success from '../components/notifications/Success'
 
 export default {
   name: "Hybrid",
   components: {
       Votee,
-      Success
   },
   methods: {
       scroll(){

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import MobileLogin from '../components/mobile/MobileLogin.vue'
 import Login from '../components/Login'
+import CandidateVote from '../components/mobile/CandidateVote.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ Vue.use(VueRouter)
     path: '/mobile-login',
     name: 'MobileLogin',
     component: MobileLogin
+  },
+  {
+    path: '/vote',
+    name: 'CandidateVote',
+    component: CandidateVote
   }
 ]
 

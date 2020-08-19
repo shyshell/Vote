@@ -6,7 +6,7 @@
     <div class="all">
       <Nav />
       <div class="mydata">
-        <Success/>
+        <!-- <Success/> -->
         <!-- scraped until i can figure out a way 
         to display dynamic global toasts without spaghetti code-->
 
@@ -50,7 +50,7 @@ import ProfileTwo from "../components/ProfileTwo";
 import Vote from "../components/mobile/Vote";
 import Logs from "../components/Logs";
 import Hybrid from "../components/Hybrid"
-import Success from '../components/notifications/Success'
+// import Success from '../components/notifications/Success'
 // import Modal from '../components/Modal'
 
 export default {
@@ -67,7 +67,7 @@ export default {
     Vote,
     Logs,
     Hybrid,
-    Success
+    // Success
   },
 };
 </script>

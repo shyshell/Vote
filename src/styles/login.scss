@@ -1,133 +1,191 @@
 @import './variables.scss';
 
-.login {
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-	background-image: url('../assets/cloud.jpg');
-	// <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
+.screens {
+    // visibility: hidden;
+    height: 100%;
+    width: 100%;
 
-    .entire {
-        position: fixed;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        height: 60%;
+    .mobile-login {
+        @media (min-width: 640px) {
+			display: block;
+			// visibility: hidden;
+		}
 
-        .my-form {
-            // position: fixed;
-            // height: 440px;
-            height: fit-content;
-            width: 500px;
-            background-color: white;
-            border-radius: 4px;
-            // right: 0;
-            // left: 0;
-            // top: 0;
-            // bottom: 0;
+		@media (max-width: 767px) {
+			display: block;
+			// visibility: hidden;
+		}
+
+		@media (min-width: 768px) {
+			display: none;
+			// visibility: hidden;
+		}
+
+		@media (min-width: 1024px) {
+			display: none;
+			// visibility: visible;
+		}
+
+		@media (min-width: 1280px) {
+			display: none;
+			// visibility: visible;
+		}
+    }
+
+    .login {
+        @media (min-width: 640px) {
+			display: none;
+			// visibility: hidden;
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+			// visibility: hidden;
+		}
+
+		@media (min-width: 768px) {
+			display: block;
+			// visibility: hidden;
+		}
+
+		@media (min-width: 1024px) {
+			display: block;
+			// visibility: visible;
+		}
+
+		@media (min-width: 1280px) {
+			display: block;
+			// visibility: visible;
+		}
+
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-image: url('../assets/cloud.jpg');
+        // <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
+    
+        .entire {
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
             margin-right: auto;
             margin-left: auto;
             margin-top: auto;
             margin-bottom: auto;
-            border: 2px solid;
-            border-color: $borderColor;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-        
-            .brand {
-                color: white;
-                font-size: 12px;
-                font-weight: bold;
-                text-align: start;
-                margin: 20px 20px 20px 30px;
+            height: 60%;
+    
+            .my-form {
+                // position: fixed;
+                // height: 440px;
                 height: fit-content;
-                width: fit-content;
-                background-color: $primaryColor;
-                padding: 10px 20px 5px 20px;
-                border-radius: 50px
-            }
-    
-            .title {
-                color: $darkBlue;
-                font-size: 18px;
-                font-weight: bold;
-                margin-top: 30px;
-                text-align: start;
-                margin-left: 30px;
-            }
-    
-            .subtitle {
-                color: $subtitleColor;
-                font-size: 16px;
-                text-align: start;
-                margin-left: 30px;
-                margin-top: 5px;
-                font-weight: 400;
-            }
-    
-            .form {
-                margin-top: 30px;
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                margin-left: 30px;
-                text-align: start;
-    
-                .input {
-                    width: 80%;
-                    // margin-right: 20px;
-    
-                    .label {
-                        text-align: start;
-                        font-weight: 500;
-                        font-size: 16px;
-                        color: $darkBlue;
-                    }
-    
-                    .form-input {
-                        width: 400px;
-                        border: 2px solid;
-                        border-color: $paleGrey;
-                        background-color: $paleGrey;
-                        border-radius: 4px;
-                        height: 35px;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        margin-bottom: 20px;
-                        margin-top: 5px;
-                        color: $darkBlue;
-                        // font-family: $fontRoboto;
-                    }
-    
-                    .feedback {
-                        text-align: center;
-                        font-size: 16px;
-                        color: red;
-                        font-weight: 400;
-                    }
-    
-                    .login-btn {
-                        // margin-left: 30px;
-                        width: 424px;
-                        margin-top: 15px;
-                        margin-bottom: 30px;
-                        border: none;
-                        background-color: $primaryColor;
-                        border-radius: 4px;
-                        color: white;
-                        height: 35px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                width: 500px;
+                background-color: white;
+                border-radius: 4px;
+                // right: 0;
+                // left: 0;
+                // top: 0;
+                // bottom: 0;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                border: 2px solid;
+                border-color: $borderColor;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            
+                .brand {
+                    color: white;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-align: start;
+                    margin: 20px 20px 20px 30px;
+                    height: fit-content;
+                    width: fit-content;
+                    background-color: $primaryColor;
+                    padding: 10px 20px 5px 20px;
+                    border-radius: 50px
+                }
+        
+                .title {
+                    color: $darkBlue;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-top: 30px;
+                    text-align: start;
+                    margin-left: 30px;
+                }
+        
+                .subtitle {
+                    color: $subtitleColor;
+                    font-size: 16px;
+                    text-align: start;
+                    margin-left: 30px;
+                    margin-top: 5px;
+                    font-weight: 400;
+                }
+        
+                .form {
+                    margin-top: 30px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-left: 30px;
+                    text-align: start;
+        
+                    .input {
+                        width: 80%;
+                        // margin-right: 20px;
+        
+                        .label {
+                            text-align: start;
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: $darkBlue;
+                        }
+        
+                        .form-input {
+                            width: 400px;
+                            border: 2px solid;
+                            border-color: $paleGrey;
+                            background-color: $paleGrey;
+                            border-radius: 4px;
+                            height: 35px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            margin-bottom: 20px;
+                            margin-top: 5px;
+                            color: $darkBlue;
+                            // font-family: $fontRoboto;
+                        }
+        
+                        .feedback {
+                            text-align: center;
+                            font-size: 16px;
+                            color: red;
+                            font-weight: 400;
+                        }
+        
+                        .login-btn {
+                            // margin-left: 30px;
+                            width: 424px;
+                            margin-top: 15px;
+                            margin-bottom: 30px;
+                            border: none;
+                            background-color: $primaryColor;
+                            border-radius: 4px;
+                            color: white;
+                            height: 35px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
                 }
             }
         }
-    }
+    }    
 }
