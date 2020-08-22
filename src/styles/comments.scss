@@ -8,6 +8,8 @@
     border-radius: 8px;
     margin-top: 20px;
     background-color: white;
+    border: 2px solid;
+    border-color: $borderColor;
 
     .content {
         padding: 15px;
@@ -36,7 +38,6 @@
             color: $subtitleColor;
             font-size: 14px;
             text-align: left;
-            letter-spacing: 0.5px;
             word-spacing: 1px;
             margin-top: 10px;
         }

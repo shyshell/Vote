@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import MobileLogin from '../components/mobile/MobileLogin.vue'
 import Login from '../components/Login'
 import CandidateVote from '../components/mobile/CandidateVote.vue'
+import Details from '../components/mobile/Details.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ Vue.use(VueRouter)
     path: '/vote',
     name: 'CandidateVote',
     component: CandidateVote
+  },
+  {
+    path: '/details',
+    name: 'Details',
+    component: Details
   }
 ]
 
