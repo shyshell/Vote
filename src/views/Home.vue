@@ -69,6 +69,10 @@ export default {
     Hybrid,
     // Success
   },
+
+  created() {
+    // alert('popup iko top right of the screen')
+  },
 };
 </script>
 

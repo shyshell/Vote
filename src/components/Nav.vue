@@ -47,9 +47,9 @@
                     </div>
                   </div>
                   <NavBar name="Dashboard" status="selected" path="/settings"/>
-                  <NavBar name="Logs" status="not-selected" path="/settings"/>
-                  <NavBar name="Help" status="not-selected" path="/settings"/>
+                  <!-- <NavBar name="Logs" status="not-selected" path="/settings"/> -->
                   <NavBar name="Settings" status="not-selected" path="/settings"/>
+                  <NavBar name="Help" status="not-selected" path="/settings"/>
                   <NavBar name="Logout" status="not-selected" path="/settings"/>
                 </div>
             </div>

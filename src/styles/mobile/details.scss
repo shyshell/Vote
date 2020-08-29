@@ -56,16 +56,18 @@
 				.details-year {
 					display: flex;
 					justify-content: flex-start;
-					margin-left: 15px;
+					margin-left: 5px;
+					width: 100%;
 					align-items: center;
+					font-size: 12px;
 					color: $subtitleColor;
 					font-weight: 600;
 
 					.details-dot {
 						background-color: $subtitleColor;
-                        border-radius: 9999px;
-                        height: 10px;
-						width: 10px;
+                        border-radius: 50px;
+                        height: 8px;
+						width: 8px;
 						margin-right: 5px;
 					}
 				}
@@ -101,7 +103,7 @@
 
 	.details-declarations {
 		margin: 10px;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		text-align: start;
 		margin-top: 30px;
 		font-weight: 600;
@@ -135,10 +137,6 @@
 
 	.details-back {
 		margin-top: 30px;
-		position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
         padding: 10px;
         display: flex;
 		justify-content: center;
